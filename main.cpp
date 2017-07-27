@@ -114,7 +114,7 @@ int main(int, char**)
 			//resize(imgOri, imgRsz, cv::Size(imgSize, imgSize)); //unpadded
 			Bio::resize(imgOri, &imgRsz, imgSize); //padded
 
-			cv::cvtColor(imgRsz, imgRsz, CV_RGB2GRAY); //convert to 1 channel
+			cv::cvtColor(imgRsz, imgRsz, CV_BGR2GRAY); //convert to 1 channel
 
 			dataTestVec.assign(imgRsz.datastart, imgRsz.dataend);
 
